@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title></title>
+        <subtitle></subtitle>
+        <icon>https://blog.yaojiu.org/assets/favicon.ico</icon>
+        <link>https://blog.yaojiu.org</link>
+        <author>
+          <name>Yeah</name>
+        </author>
+        <description>Yeah的个人博客~~</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 09 Aug 2025 17:43:57 +0800</pubDate>
+        <lastBuildDate>Sat, 09 Aug 2025 17:43:57 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://blog.yaojiu.org/2025/08/09/how_to_use_vim/</guid>
+            <title>Vim使用指南</title>
+            <link>https://blog.yaojiu.org/2025/08/09/how_to_use_vim/</link>
+            <category term="教程" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/" />
+            <category term="Linux" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/Linux/" />
+            <category term="Vim" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/Linux/Vim/" />
+            <category term="Vim" scheme="https://blog.yaojiu.org/tags/Vim/" />
+            <category term="教程" scheme="https://blog.yaojiu.org/tags/%E6%95%99%E7%A8%8B/" />
+            <category term="IDE" scheme="https://blog.yaojiu.org/tags/IDE/" />
+            <category term="Editor" scheme="https://blog.yaojiu.org/tags/Editor/" />
+            <category term="Linux" scheme="https://blog.yaojiu.org/tags/Linux/" />
+            <pubDate>Sat, 09 Aug 2025 17:43:57 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;Vim是一款终端编辑器，轻量但功能强大,本指南适用于 Linux/macOS/Windows 用户&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;vim的安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vim的安装&#34;&gt;#&lt;/a&gt; Vim的安装&lt;/h2&gt;
+&lt;h3 id=&#34;linux&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux&#34;&gt;#&lt;/a&gt; Linux&lt;/h3&gt;
+&lt;p&gt;Debian/Ubuntu 极其衍生发行版本&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;sudo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; apt&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; install&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; vim&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;CenteOS/RHEL 及其衍生版本&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;sudo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; yum&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; install&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; vim&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Arch&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;sudo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; pacman&lt;/span&gt;&lt;span style=&#34;color:#A65E2B;--shiki-dark:#C99076&#34;&gt; -S&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; vim&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;macos&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#macos&#34;&gt;#&lt;/a&gt; macOS&lt;/h3&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;brew&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; install&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; vim&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;# 或者使用macvim&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;brew&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; install&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; macvim&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;windows&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#windows&#34;&gt;#&lt;/a&gt; Windows&lt;/h3&gt;
+&lt;p&gt;1.&lt;a href=&#34;https://www.vim.org/download.php&#34;&gt;官网&lt;/a&gt;下载安装包&lt;br /&gt;
+2.或者使用Chocolate&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;choco install vim&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;vim的几种模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vim的几种模式&#34;&gt;#&lt;/a&gt; Vim的几种模式&lt;/h2&gt;
+&lt;p&gt;Vim 共有4中模式，分别为&lt;code&gt;正常模式&lt;/code&gt;,&lt;code&gt;插入模式&lt;/code&gt;,&lt;code&gt;可视模式&lt;/code&gt;,&lt;code&gt;命令行模式&lt;/code&gt;，后三种模式均可使用&lt;code&gt;Esc&lt;/code&gt;退出至&lt;code&gt;正常模式&lt;/code&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;模式&lt;/th&gt;
+&lt;th&gt;进入方式&lt;/th&gt;
+&lt;th&gt;退出方式&lt;/th&gt;
+&lt;th&gt;用途&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;正常模式&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Esc&lt;/code&gt; 或 &lt;code&gt;Ctrl+[&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;自动进入其他模式&lt;/td&gt;
+&lt;td&gt;导航/操作文本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;插入模式&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;i&lt;/code&gt; / &lt;code&gt;a&lt;/code&gt; / &lt;code&gt;o&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Esc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;编辑文本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可视模式&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;v&lt;/code&gt; / &lt;code&gt;V&lt;/code&gt; / &lt;code&gt;Ctrl+v&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Esc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;选择文本块&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;命令行模式&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;:&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Enter&lt;/code&gt;执行后退出&lt;/td&gt;
+&lt;td&gt;执行命令/保存/退出&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;配置文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置文件&#34;&gt;#&lt;/a&gt; 配置文件&lt;/h2&gt;
+&lt;h3 id=&#34;位置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#位置&#34;&gt;#&lt;/a&gt; 位置&lt;/h3&gt;
+&lt;p&gt;在linux中默认情况下vim的配置位置如下&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;系统 vimrc 文件&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;/etc/vimrc&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;用户 vimrc 文件&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;$HOME/.vimrc&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;第二用户 vimrc 文件&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;~/.vim/vimrc&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;第三用户 vimrc 文件&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;~/.config/vim/vimrc&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;用户 exrc 文件&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;$HOME/.exrc&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;defaults 文件&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;$VIMRUNTIME/defaults.vim&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;$VIM 预设值&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;/usr/share/vim&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们也可以通过命令 &lt;code&gt;vim --version&lt;/code&gt;查看其配置文件所在地，通过此命令我们也能知道当前vim支持的一些功能&lt;/p&gt;
+&lt;h2 id=&#34;常用的配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用的配置&#34;&gt;#&lt;/a&gt; 常用的配置&lt;/h2&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vim&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;&#34; 基础设置&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt; number&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;                  &#34; 显示行号&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt; relativenumber&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;          &#34; 相对行号&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt; tabstop&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2F798A;--shiki-dark:#4C9A91&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;               &#34; Tab 显示宽度&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt; shiftwidth&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2F798A;--shiki-dark:#4C9A91&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;            &#34; 自动缩进宽度&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt; expandtab&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;               &#34; 将Tab转为空格&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt; cursorline&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;              &#34; 高亮当前行&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#1E754F;--shiki-dark:#4D9375&#34;&gt;syntax on&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;                   &#34; 语法高亮&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;&#34; 快捷键映射&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;nnoremap&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#A65E2B;--shiki-dark:#C99076&#34;&gt;C-s&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;&gt;&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt; :w&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#A65E2B;--shiki-dark:#C99076&#34;&gt;CR&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;&gt;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;       &#34; Ctrl+S 保存&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;inoremap&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt; jj &lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#A65E2B;--shiki-dark:#C99076&#34;&gt;Esc&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;&gt;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;           &#34; jj 退出插入模式&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;一些常用的快捷键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一些常用的快捷键&#34;&gt;#&lt;/a&gt; 一些常用的快捷键&lt;/h2&gt;
+&lt;p&gt;这些快捷键均应在正常模式下使用，而不是插入模式，注意区分大小写&lt;/p&gt;
+&lt;h3 id=&#34;移动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#移动&#34;&gt;#&lt;/a&gt; 移动&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;h j k l&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;左/下/上/右&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;行首&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;^&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;行首非空字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;$&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;行尾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;gg&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;文件开头&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;G&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;文件末尾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+f&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;下翻页&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;上翻页&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;编辑操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编辑操作&#34;&gt;#&lt;/a&gt; 编辑操作&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;i&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;光标前插入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;a&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;光标后插入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;o&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;下方新建行插入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;dd&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;删除当前行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;yy&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;复制当前行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;p&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;粘贴&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;u&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;撤销&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+r&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;重做&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;gt; &amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;增加缩进&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt; &amp;lt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;减少缩进&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;搜索替换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搜索替换&#34;&gt;#&lt;/a&gt; 搜索替换&lt;/h3&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vim&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5E3F;--shiki-dark:#C4704F&#34;&gt;/pattern     &#34; 向前搜索 例如 /&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;hello 即搜索hello&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;?&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;pattern&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;     &#34; 向后搜索&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;            &#34; 下一个匹配项&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;N&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;            &#34; 上一个匹配项&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:%s&lt;/span&gt;&lt;span style=&#34;color:#AB5E3F;--shiki-dark:#C4704F&#34;&gt;/old/&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;new/g&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt; &#34; 全局替换 &lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#2F798A;--shiki-dark:#4C9A91&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;20s&lt;/span&gt;&lt;span style=&#34;color:#AB5E3F;--shiki-dark:#C4704F&#34;&gt;/old/&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;new/g&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt; &#34; 10-20行替换&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用命令&#34;&gt;#&lt;/a&gt; 常用命令&lt;/h3&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vim&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:q&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;           &#34; 退出&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:q&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;          &#34; 强制退出不保存&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:w&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;           &#34; 保存&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:wq&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;          &#34; 保存并退出&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;sp&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt; file&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;     &#34; 水平分割窗口&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:vsp file&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;    &#34; 垂直分割窗口&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;Ctrl&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;ww&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;      &#34; 切换窗口&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;ls&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;         &#34; 执行 shell 命令&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:r filename&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;  &#34; 插入文件内容&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt; paste&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;   &#34; 粘贴模式（防格式错乱）&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;更多命令请参考&lt;a href=&#34;https://vim.rtorr.com/lang/zh_cn&#34;&gt;此处&lt;/a&gt;&lt;br /&gt;
+另外附上一张Vim键位图&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;vim-key.gif&#34; alt=&#34;Vim 键位图&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;效率提升技巧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#效率提升技巧&#34;&gt;#&lt;/a&gt; 效率提升技巧&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;组合命令示例&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;5dd&lt;/code&gt; → 删除5行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;y3w&lt;/code&gt; → 复制3个单词&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c$&lt;/code&gt; → 修改到行尾&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;标记跳转&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ma&lt;/code&gt; 设置标记 a&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;a&lt;/code&gt; 跳转到标记 a&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;文件浏览&lt;/strong&gt;：&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vim&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;Ctrl&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;w&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;h&lt;/span&gt;&lt;span style=&#34;color:#AB5E3F;--shiki-dark:#C4704F&#34;&gt;/j/&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;k/l&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;    &#34; 在窗口间导航&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;学习资源推荐&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习资源推荐&#34;&gt;#&lt;/a&gt; 学习资源推荐&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;交互式教程：&lt;code&gt;vimtutor&lt;/code&gt;（终端输入命令）&lt;/li&gt;
+&lt;li&gt;图形练习：&lt;a href=&#34;https://vim-adventures.com/&#34;&gt;https://vim-adventures.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;掌握 Vim 的关键：不必去死记硬背，在需要使用什么的时候查看对照表，反复使用即可&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
