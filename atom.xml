@@ -232,6 +232,10 @@
 &lt;p&gt;&lt;strong&gt;文件浏览&lt;/strong&gt;：&lt;/p&gt;
 &lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vim&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;Ctrl&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;w&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;h&lt;/span&gt;&lt;span style=&#34;color:#AB5E3F;--shiki-dark:#C4704F&#34;&gt;/j/&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;k/l&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;    &#34; 在窗口间导航&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;插件支持&lt;/strong&gt;&lt;br /&gt;
+可以在 idea,vscode 中安装vim插件&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;学习资源推荐&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#学习资源推荐&#34;&gt;#&lt;/a&gt; 学习资源推荐&lt;/h2&gt;
