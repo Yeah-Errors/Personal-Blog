@@ -16,11 +16,11 @@
             <guid isPermalink="true">https://blog.yaojiu.org/2025/08/10/Linux-configures-udev-rules-to-implement-web-driver/</guid>
             <title>Linux配置udev规则以实现网页驱动</title>
             <link>https://blog.yaojiu.org/2025/08/10/Linux-configures-udev-rules-to-implement-web-driver/</link>
-            <category term="教程" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/" />
-            <category term="Linux" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/Linux/" />
-            <category term="网页驱动" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/Linux/%E7%BD%91%E9%A1%B5%E9%A9%B1%E5%8A%A8/" />
-            <category term="系统配置" scheme="https://blog.yaojiu.org/categories/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" />
-            <category term="Linux" scheme="https://blog.yaojiu.org/categories/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/Linux/" />
+            <category term="教程" scheme="https://blog.yaojiu.org/categories/Tutorial/" />
+            <category term="Linux" scheme="https://blog.yaojiu.org/categories/Tutorial/Linux/" />
+            <category term="网页驱动" scheme="https://blog.yaojiu.org/categories/Tutorial/Linux/%E7%BD%91%E9%A1%B5%E9%A9%B1%E5%8A%A8/" />
+            <category term="系统配置" scheme="https://blog.yaojiu.org/categories/System-Config/" />
+            <category term="Linux" scheme="https://blog.yaojiu.org/categories/System-Config/Linux/" />
             <category term="udev" scheme="https://blog.yaojiu.org/tags/udev/" />
             <category term="教程" scheme="https://blog.yaojiu.org/tags/%E6%95%99%E7%A8%8B/" />
             <category term="鼠标驱动" scheme="https://blog.yaojiu.org/tags/%E9%BC%A0%E6%A0%87%E9%A9%B1%E5%8A%A8/" />
@@ -88,14 +88,14 @@
             <guid isPermalink="true">https://blog.yaojiu.org/2025/08/10/linux-use-mariadb-database/</guid>
             <title>Arch-Linux安装并配置MariaDB</title>
             <link>https://blog.yaojiu.org/2025/08/10/linux-use-mariadb-database/</link>
-            <category term="教程" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/" />
-            <category term="Linux" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/Linux/" />
-            <category term="MariaDB" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/Linux/MariaDB/" />
-            <category term="系统配置" scheme="https://blog.yaojiu.org/categories/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" />
+            <category term="教程" scheme="https://blog.yaojiu.org/categories/Tutorial/" />
+            <category term="Linux" scheme="https://blog.yaojiu.org/categories/Tutorial/Linux/" />
+            <category term="MariaDB" scheme="https://blog.yaojiu.org/categories/Tutorial/Linux/MariaDB/" />
+            <category term="系统配置" scheme="https://blog.yaojiu.org/categories/System-Config/" />
             <category term="CS" scheme="https://blog.yaojiu.org/categories/CS/" />
-            <category term="Linux" scheme="https://blog.yaojiu.org/categories/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/Linux/" />
-            <category term="数据库" scheme="https://blog.yaojiu.org/categories/CS/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
-            <category term="MariaDB" scheme="https://blog.yaojiu.org/categories/CS/%E6%95%B0%E6%8D%AE%E5%BA%93/MariaDB/" />
+            <category term="Linux" scheme="https://blog.yaojiu.org/categories/System-Config/Linux/" />
+            <category term="数据库" scheme="https://blog.yaojiu.org/categories/CS/database/" />
+            <category term="MariaDB" scheme="https://blog.yaojiu.org/categories/CS/database/MariaDB/" />
             <category term="教程" scheme="https://blog.yaojiu.org/tags/%E6%95%99%E7%A8%8B/" />
             <category term="Linux" scheme="https://blog.yaojiu.org/tags/Linux/" />
             <category term="MariaDB" scheme="https://blog.yaojiu.org/tags/MariaDB/" />
@@ -172,9 +172,9 @@
             <guid isPermalink="true">https://blog.yaojiu.org/2025/08/09/how_to_use_vim/</guid>
             <title>Vim使用指南</title>
             <link>https://blog.yaojiu.org/2025/08/09/how_to_use_vim/</link>
-            <category term="教程" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/" />
-            <category term="Linux" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/Linux/" />
-            <category term="Vim" scheme="https://blog.yaojiu.org/categories/%E6%95%99%E7%A8%8B/Linux/Vim/" />
+            <category term="教程" scheme="https://blog.yaojiu.org/categories/Tutorial/" />
+            <category term="Linux" scheme="https://blog.yaojiu.org/categories/Tutorial/Linux/" />
+            <category term="Vim" scheme="https://blog.yaojiu.org/categories/Tutorial/Linux/Vim/" />
             <category term="教程" scheme="https://blog.yaojiu.org/tags/%E6%95%99%E7%A8%8B/" />
             <category term="Linux" scheme="https://blog.yaojiu.org/tags/Linux/" />
             <category term="Vim" scheme="https://blog.yaojiu.org/tags/Vim/" />
